@@ -1,5 +1,5 @@
 # Markdown Files
-
+To be updated.
 Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
 in regular markdown files (`.md`), you'll write in the same flavor of markdown
 called **MyST Markdown**.
@@ -38,6 +38,10 @@ use the following directive:
 ````
 ```{note}
 Here is a note
+::{note}
+Announcements - [Signal Processing Grand Challenges](https://2023.ieeeicassp.org/signal-processing-grand-challenges/)
+:::
+
 ```
 ````
 
