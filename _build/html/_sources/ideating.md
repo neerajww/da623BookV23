@@ -1,4 +1,4 @@
-# Ideation - Topics, utilities, and datasets
+# Ideation: Topics, utilities, and datasets
 
 In the class we had an ideation and discussed briefly about the following topics.
 
@@ -12,11 +12,7 @@ In the class we had an ideation and discussed briefly about the following topics
     * Speech synthesis 
     * Music synthesis
 * Signal compression
-    * Signal modeling
-    * Analyzing parameters
-    * Impact of quantization
-    * Packet loss
-    * Reconstruction
+    * Signal modeling, Analyzing parameters, Impact of quantization, Packet loss, Reconstruction
 * Image/video/audio watermarking - forensics  
 * … and more 
 
@@ -61,6 +57,13 @@ You may also draw inspiration from topics listed at below links
 * [A collection of EEG Datasets for various kinds of brain-computer interfacing (BCI) ideas](https://github.com/meagmohit/EEG-Datasets)
 `````
 
+`````{admonition}  Climate Monitoring
+:class: tip
+[How fast are the oceans warming?](https://www.science.org/doi/10.1126/science.aav7619) Questions like these needs analysis of climate data records using mathematical models, parameter estimation, and inferencing. The below dataset can get you started to explore similar and more questions.
+* [Berkeley Earth's Global Temperature Record (1750-Now)](https://berkeleyearth.org/data/)
+`````
+
 `````{admonition}  More
+:class: tip
 To be added ...
 `````
