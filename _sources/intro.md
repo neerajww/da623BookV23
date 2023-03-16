@@ -1,4 +1,5 @@
 # Welcome to DA623 Projects Page
 
-Our ideas here is to pool all the project ideas being pursued as part of this course in one place.
-On the left you will see the contents navigation tab. Use it to browse the collection.
+All project guidelines, ideas, and resources will be documented and shared here. On the left you see the contents navigation tab. Use it to browse the collection.
+
+![XKCD](https://imgs.xkcd.com/comics/types_of_scientific_paper.png)
