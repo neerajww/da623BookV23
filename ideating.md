@@ -29,6 +29,7 @@ You may also draw inspiration from topics listed at below links
 `````{admonition} Utilities
 :class: tip
 * [Python Programming](https://cs50.harvard.edu/python/2022/)
+* [Project management using Github](https://docs.github.com/en/get-started/quickstart/hello-world)
 * [Know about Python APIs](https://www.kdnuggets.com/2021/09/python-apis-data-science-project.html)
 * [Hugging Face - Utility, APIs, and Datasets](https://huggingface.co/docs/datasets/installation)
 * [Kaggle Challenges and Datasets](https://www.kaggle.com/datasets/)
