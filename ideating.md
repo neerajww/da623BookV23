@@ -41,6 +41,7 @@ You may also draw inspiration from topics listed at below links
 * [Coswara: A respiratory sound signals dataset](https://github.com/iiscleap/Coswara-Data)
 * [Urban sound dataset](https://urbansounddataset.weebly.com/urbansound8k.html)
 * [Audioset by Google](https://research.google.com/audioset/)
+* [Audio Digit Dataset]https://datarepository.wolframcloud.com/resources/Spoken-Digit-Commands-Dataset)
 `````
 
 `````{admonition} Speech Datasets
@@ -64,7 +65,16 @@ You may also draw inspiration from topics listed at below links
 * [Berkeley Earth's Global Temperature Record (1750-Now)](https://berkeleyearth.org/data/)
 `````
 
-`````{admonition}  More
+`````{admonition}  Art and Creativity
 :class: tip
-To be added ...
+* [Drawing Fourier Series](https://www.myfourierepicycles.com/)
+* [Visualize Audio](https://github.com/willianjusten/awesome-audio-visualization)
+* [Chrome Music Lab](https://musiclab.chromeexperiments.com/)
+`````
+
+`````{admonition}  Human activity recognition Datasets
+:class: tip
+* [Human activity recorded using smartphone intertial sensors](https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones
+)
+* [Human activity recorded using smartphone accelerometers](https://www.cis.fordham.edu/wisdm/dataset.php)
 `````
