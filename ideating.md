@@ -41,12 +41,12 @@ You may also draw inspiration from topics listed at below links
 * [Coswara: A respiratory sound signals dataset](https://github.com/iiscleap/Coswara-Data)
 * [Urban sound dataset](https://urbansounddataset.weebly.com/urbansound8k.html)
 * [Audioset by Google](https://research.google.com/audioset/)
-* [Audio Digit Dataset]https://datarepository.wolframcloud.com/resources/Spoken-Digit-Commands-Dataset)
 `````
 
 `````{admonition} Speech Datasets
 :class: tip
 * [Speech datasets](https://web.stanford.edu/class/cs224s/datasets/)
+* [Spoken Digit Dataset](https://datarepository.wolframcloud.com/resources/Spoken-Digit-Commands-Dataset)
 `````
 
 `````{admonition} Brain Imaging Datasets
