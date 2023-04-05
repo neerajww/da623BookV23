@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search &#8212; DA623 Projects</title>
+    <title>Music Recognition &#8212; DA623 Projects</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -33,7 +33,6 @@
     
   <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
@@ -43,16 +42,18 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
-  <script src="searchindex.js" defer></script>
-  
+    <link rel="search" title="Search" href="search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
-
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -78,7 +79,7 @@
       <h1 class="site-logo" id="site-title">DA623 Projects</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="#" method="get">
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -209,6 +210,23 @@
             </button>
             
             
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/team_kurtosis_project_init.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
             <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
@@ -220,7 +238,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fteam_kurtosis_project_init.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -241,6 +259,59 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#team-name">
+   Team Name
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#team-members">
+   Team Members
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-title">
+   Project Title
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objective">
+   Objective
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background">
+   Background
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methodology">
+   Methodology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deliverables">
+   Deliverables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dataset-to-be-used">
+   Dataset to be used
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -249,27 +320,92 @@
         
               <div>
                 
-  <h1 id="search-documentation">Search</h1>
-  <div id="fallback" class="admonition warning">
-  <script>$('#fallback').hide();</script>
-  <p>
-    Please activate JavaScript to enable the search
-    functionality.
-  </p>
-  </div>
-  <p>
-    Searching for multiple words only shows matches that contain
-    all words.
-  </p>
-  <form action="" method="get">
-    <input type="text" name="q" aria-labelledby="search-documentation" value="" />
-    <input type="submit" value="search" />
-    <span id="search-progress" style="padding-left: 10px"></span>
-  </form>
-  
-  <div id="search-results">
-  
-  </div>
+  <div class="section" id="music-recognition">
+<h1>Music Recognition<a class="headerlink" href="#music-recognition" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="team-name">
+<h2>Team Name<a class="headerlink" href="#team-name" title="Permalink to this headline">¶</a></h2>
+<p>Kurtosis</p>
+</div>
+<div class="section" id="team-members">
+<h2>Team Members<a class="headerlink" href="#team-members" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Prashant Pandey 190108040 EEE bachelors</p></li>
+<li><p>Manchikatla Navya Sri 190102050 ECE bachelors</p></li>
+<li><p>Chanshu Kumar 190102019 ECE bachelors</p></li>
+<li><p>Chelsi Rawat 190101031 CSE bachelors</p></li>
+<li><p>Parag Panigrahi 190101111 CSE bachelors</p></li>
+</ul>
+</div>
+<div class="section" id="project-title">
+<h2>Project Title<a class="headerlink" href="#project-title" title="Permalink to this headline">¶</a></h2>
+<p>Robust Music Recognition</p>
+</div>
+<div class="section" id="objective">
+<h2>Objective<a class="headerlink" href="#objective" title="Permalink to this headline">¶</a></h2>
+<p>The objective of this project is to recognize songs from small recorded clips using signal processing techniques, with the aim of developing an automated song system.</p>
+</div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>Often times when we attend some public event, we come across someone playing some songs on speakers. Sometimes we wish to know which song is being played. In order to do that, there is an application by the name of <a class="reference external" href="https://www.shazam.com/home">Shazam</a>. Shazam calculates the spectrogram of the recoded audio, performs acoustic fingerprinting on it and then creates a time-invariant hash-map to decide which song it is from the database.</p>
+<p>We decide to use more signal processing to create a more robust audio recognition system. Shazam will not be able to recognize songs in low SNR environments. Also, if the recorded audio has added effects, as are added in songs nowadays, then Shazam fails to recognize such songs.</p>
+</div>
+<div class="section" id="methodology">
+<h2>Methodology<a class="headerlink" href="#methodology" title="Permalink to this headline">¶</a></h2>
+<p>We will develop two adaptive filters ([1]):</p>
+<ol class="simple">
+<li><p>White noise remover.</p></li>
+<li><p>Pink noise remover.</p></li>
+</ol>
+<p>We will take the dataset of songs, add the following effects to them by making their copies:</p>
+<ol class="simple">
+<li><p>Convolving with different audio impulse responses to simulate different environments.</p></li>
+<li><p>Adding white and pink noises of different amplitudes.</p></li>
+<li><p>Adding various effects like delay, reverb and distortion by creating even more copies.</p></li>
+</ol>
+<p>This will be our new dataset upon which training will be performed.</p>
+<p>Recorded audio will go through white and pink noise filters first. Then, we will calculate its spectrogram and identify acoustic fingerprints. Now, we feed these fingerprints into a deep neural network which will tell us the index of the song which that audio clip most likely corresponds to.</p>
+</div>
+<div class="section" id="deliverables">
+<h2>Deliverables<a class="headerlink" href="#deliverables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A .ipynb notebook detailing the variability analysis of songs with added effects and the development of the signature recognition system.</p></li>
+<li><p>A GitHub repository containing the source code and documentation of the project.</p></li>
+<li><p>An oral presentation in class.</p></li>
+</ul>
+</div>
+<div class="section" id="dataset-to-be-used">
+<h2>Dataset to be used<a class="headerlink" href="#dataset-to-be-used" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>We have our own dataset of about 200 GB of songs which we shall be using for this project.</p></li>
+</ul>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Ahmed, S., Afroz, F., Tawsif, A., &amp; Huq, A. (2015). CANCELLATION OF WHITE AND COLOR NOISE WITH ADAPTIVE FILTER USING LMS ALGORITHM.</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               

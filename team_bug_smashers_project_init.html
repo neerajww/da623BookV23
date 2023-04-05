@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Plan Meet &#8212; DA623 Projects</title>
+    <title>Singing voice separation &#8212; DA623 Projects</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,8 +51,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Voice Analytics" href="team_bandwidth_project_init.html" />
-    <link rel="prev" title="Ideation: Topics, utilities, and datasets" href="ideating.html" />
+    <link rel="next" title="Rotating shaft analysis" href="team_chiSquared_project_init.html" />
+    <link rel="prev" title="Voice Analytics" href="team_bandwidth_project_init.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -99,8 +99,8 @@
    Ideation: Topics, utilities, and datasets
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="project_plan_ppt.html">
    Project Plan Meet
   </a>
  </li>
@@ -109,8 +109,8 @@
    Voice Analytics
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="team_bug_smashers_project_init.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Singing voice separation
   </a>
  </li>
@@ -220,7 +220,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/project_plan_ppt.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/team_bug_smashers_project_init.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -240,7 +240,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fproject_plan_ppt.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fteam_bug_smashers_project_init.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -261,6 +261,54 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#team-name">
+   Team Name
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#team-members">
+   Team Members
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-title">
+   Project Title
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background">
+   Background
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methodology">
+   Methodology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deliverables">
+   Deliverables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dataset-to-be-used">
+   Dataset to be used
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -269,35 +317,57 @@
         
               <div>
                 
-  <div class="section" id="project-plan-meet">
-<h1>Project Plan Meet<a class="headerlink" href="#project-plan-meet" title="Permalink to this headline">¶</a></h1>
-<blockquote>
-<div><p>This project plan explicitly encourages the iterative nature of research as a series of questions and answers that gradually refine your hypotheses.</p>
-</div></blockquote>
-<ol class="simple">
-<li><p>You will start by recollecting the course material taught in the intial classes. To help you, we discussed the following.</p>
+  <div class="section" id="singing-voice-separation">
+<h1>Singing voice separation<a class="headerlink" href="#singing-voice-separation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="team-name">
+<h2>Team Name<a class="headerlink" href="#team-name" title="Permalink to this headline">¶</a></h2>
+<p>BugSmashers</p>
+</div>
+<div class="section" id="team-members">
+<h2>Team Members<a class="headerlink" href="#team-members" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Got introduced to the complexities in natural signals, such as speech, audio, images, weather, chemical, brain signals, respiratory signals, text etc.</p></li>
-<li><p>How to model signals? Models are based on assumptions, and help us proceed by applying the knowledge we read and learn.</p></li>
-<li><p>The scientific process - hypothesize, collect data, model data, accuracy in predicting the past, make prediction for future.</p></li>
+<li><p>Shelly Chouhan 	190101082 	CSE 	bachelors</p></li>
+<li><p>Kunal Maan 		190101047 	CSE 	bachelors</p></li>
+<li><p>Kshitij Arora 	190101046 	CSE 	bachelors</p></li>
 </ul>
-</li>
-<li><p>Using the above steps you will make a vaguely formed hypothesis of interest to you. It is here that you team up with a few friends and form your <code class="docutils literal notranslate"><span class="pre">project</span> <span class="pre">pod</span></code>. Your pod can have 1-6 team members. A team with members interested in similar ideas is cool, and if all members come from diverse background than it can be great! Please note that at this point you need not know the solution to the hypothesis but are interested to walk the path and enjoy the journey in figuring out the solution.</p></li>
-<li><p>Your proposal will not be perfect, because you still don’t know much about the data or about a phenomenon of interest at point 2. But you have a team. You go back to the course material (and syllabus), develop knowledge about your topic, distribute task amongst the members and discuss ideas like:</p>
+</div>
+<div class="section" id="project-title">
+<h2>Project Title<a class="headerlink" href="#project-title" title="Permalink to this headline">¶</a></h2>
+<p>Singing voice separation from monaural recordings using Deep recurrent neural networks</p>
+</div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>Monaural source separation, separating individual sounds from a mixed audio recording, has many practical applications such as enhancement of accuracy in speech recognition and separating singing voice from music to improve accuracy of pitch estimation and chord recognition. However, current state-of-the-art methods are not as effective as human capability, and the problem is even more challenging since only single channel information is available. This problem focuses on singing voice separation from monaural recordings, and explores the use of deep recurrent neural networks(DRNNs) for this task, along with joint optimization of the network and a soft masking function.</p>
+</div>
+<div class="section" id="methodology">
+<h2>Methodology<a class="headerlink" href="#methodology" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>is the topic interesting</p></li>
-<li><p>from where do you get the data</p></li>
-<li><p>what will the story of the project after its successful execution</p></li>
+<li><p>Waveform of a music(the mixture of voice and background music) is transformed to magnitude and phase spectra by Short-Time Fourier Transformation(STFT).</p></li>
+<li><p>Only magnitude spectra are processed as input of the RNN layer. Magnitude spectrum refers to the representation of the magnitude of the frequency components of a signal.</p></li>
+<li><p>The magnitude spectrum can be used to identify the frequency components of the singing voice and separate them from other sources of sound, such as background music or instruments.</p></li>
+<li><p>Then we’ll  use joint discriminative training, which is a technique used in machine learning to train models that can perform multiple related tasks simultaneously. In the context of singing voice separation from multiple sources using RNNs, joint discriminative training involves training the RNNs to jointly perform the task of separating the different singing voices while also optimizing their performance on other related tasks, such as noise reduction or reverberation removal.</p></li>
+<li><p>Estimated magnitude spectra of each sources and phase spectra of the mixture are transformed to waveform of each sources by ISTFT(inverse Short Time Fourier Transform).</p></li>
 </ul>
-</li>
-<li><p>Your pod will write a short abstract (1-2 page, with one block diagram) about your project, which may or may not include results, but it should at least include a testable hypothesis.</p></li>
-<li><p>Abstracts will be hosted in the website. Feedback will be collected from other groups and instructors.</p></li>
-<li><p>For the rest of the course, you will focus on getting evidence for/against your hypothesis by following the scientific process listed in point 1.</p></li>
-<li><p>In the final project presentation day, you will meet with all the pods and tell the story of your project - what, why, how, and why - of it.</p></li>
-</ol>
-<blockquote>
-<div><p>Goal is to learn how to solve something you are curious about and have fun doing this.</p>
-</div></blockquote>
+</div>
+<div class="section" id="deliverables">
+<h2>Deliverables<a class="headerlink" href="#deliverables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A .py file that checks that the summation of resulting audio sources must match the input source.</p></li>
+<li><p>A GitHub repository containing the source code and documentation of the project</p></li>
+<li><p>An oral presentation in class</p></li>
+</ul>
+</div>
+<div class="section" id="dataset-to-be-used">
+<h2>Dataset to be used<a class="headerlink" href="#dataset-to-be-used" title="Permalink to this headline">¶</a></h2>
+<p>For our experiments, we needed a dataset of songs with different attributes such as lyrics, rhythm, etc. After researching various datasets, we found the MIR-1k dataset, which was perfect for our needs. The MIR-1k dataset is a collection of one thousand songs sung by Chinese singers. It includes different genres of music, such as pop, rock, and classical, which allows us to test the performance of our proposed framework on various musical styles. Additionally, the dataset includes a wide range of vocal characteristics, such as male and female voices with different ranges, which makes it suitable for testing the robustness of our proposed framework on different singing voices. Overall, the MIR-1k dataset is an ideal resource for our research in monaural singing voice separation.</p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>P.-S. Huang and S. D. Chen and P. Smaragdis and M. Hasegawa-Johnson, “Singing-voice separation from monaural recordings using robust principal component analysis” Proceedings of the IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</p></li>
+<li><p>Colin Raffel, Brian McFee, Eric J. Humphrey, Justin Salamon, Oriol Nieto, Dawen Liang, and Daniel P. W. Ellis, “mir_eval: A Transparent Implementation of Common MIR Metrics”, Proceedings of the 15th International Conference on Music Information Retrieval, 2014.</p></li>
+</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -330,19 +400,19 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="ideating.html" title="previous page">
+        <a class="left-prev" href="team_bandwidth_project_init.html" title="previous page">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Ideation: Topics, utilities, and datasets</p>
+                <p class="prevnext-title">Voice Analytics</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="team_bandwidth_project_init.html" title="next page">
+        <a class="right-next" href="team_chiSquared_project_init.html" title="next page">
             <div class="prevnext-info">
                 <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Voice Analytics</p>
+                <p class="prevnext-title">Rotating shaft analysis</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
