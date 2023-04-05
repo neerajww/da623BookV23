@@ -1,0 +1,474 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speaker Diarization &#8212; DA623 Projects</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Piano Music" href="team_gamma_project_init.html" />
+    <link rel="prev" title="COPD Detection" href="team_duality_project_init.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo_da623.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">DA623 Projects</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to DA623 Projects
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ideating.html">
+   Ideation: Topics, utilities, and datasets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="project_plan_ppt.html">
+   Project Plan Meet
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="team_bandwidth_project_init.html">
+   Voice Analytics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="team_bug_smashers_project_init.html">
+   Singing voice separation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="team_chiSquared_project_init.html">
+   Rotating shaft analysis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="team_duality_project_init.html">
+   COPD Detection
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Speaker Diarization
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="team_gamma_project_init.html">
+   Piano Music
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="team_hidden_layers_project_init.html">
+   Gravitational Wave
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="team_ica_project_init.html">
+   Epileptic Seizures
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="team_pulse_project_init.html">
+   Bird Sound Recognition
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="team_python_project_init.html">
+   Emotion Recognition
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="team_rad_project_init.html">
+   Signal Denoising
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="team_signalMinded_project_init.html">
+   Accent Transfer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="team_symbiotes_project_init.html">
+   Sound Visualisation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="team_symphony_project_init.html">
+   Beat Synchronization
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="team_waveleds_project_init.html">
+   Parkinson Diagnosis
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/team_error_404_project_init.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fteam_error_404_project_init.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#team-name">
+   Team Name
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#team-members">
+   Team Members
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-title">
+   Project Title
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objective">
+   Objective
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background">
+   Background
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methodology">
+   Methodology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deliverables">
+   Deliverables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dataset-to-be-used">
+   Dataset to be used
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="speaker-diarization">
+<h1>Speaker Diarization<a class="headerlink" href="#speaker-diarization" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="team-name">
+<h2>Team Name<a class="headerlink" href="#team-name" title="Permalink to this headline">¶</a></h2>
+<p>Error 404</p>
+</div>
+<div class="section" id="team-members">
+<h2>Team Members<a class="headerlink" href="#team-members" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Akshat Arun - 190101007 - Computer Science and Engineering - BTech</p></li>
+<li><p>Shreyansh Meena - 190101084 - Computer Science and Engineering - BTech</p></li>
+<li><p>Siddharth Charan - 190101085 - Computer Science and Engineering - BTech</p></li>
+<li><p>Vineet Agarwal - 190101099 - Computer Science and Engineering - BTech</p></li>
+<li><p>Vivek Kumar - 190101100 - Computer Science and Engineering - BTech</p></li>
+<li><p>Vignesh Ravichandra Rao - 190101109 -Computer Science and Engineering - BTech</p></li>
+</ul>
+</div>
+<div class="section" id="project-title">
+<h2>Project Title<a class="headerlink" href="#project-title" title="Permalink to this headline">¶</a></h2>
+<p>Speaker Diarization using Non-negative Matrix Factorization</p>
+</div>
+<div class="section" id="objective">
+<h2>Objective<a class="headerlink" href="#objective" title="Permalink to this headline">¶</a></h2>
+<p>The objective of this project is to use a non-negative matrix factorization (NMF) based approach to solve the problem of Speaker Diarization that involves identifying and separating different speakers in a recording(audio signal).</p>
+</div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>Speaker diarization is a challenging problem in audio signal processing, with applications in automatic transcription, audio segmentation, speaker recognition, and speech enhancement [1], among others. Various methods have been adopted to tackle this problem, including Bayesian Source Separation and Separation by Hilbert Spectrum Subspace Decomposition [3]. In this project, we propose to use Non-Negative Matrix Factorization (NMF) as a matrix decomposition technique to address the speaker diarization task.</p>
+<p>NMF is a widely used method for analyzing and extracting meaningful features from non-negative data, such as audio signals. It has been successfully applied in various speech and audio processing tasks. NMF allows for factorizing an audio signal into a set of basis vectors and corresponding activation coefficients, which can represent different speakers or sources in the audio.</p>
+</div>
+<div class="section" id="methodology">
+<h2>Methodology<a class="headerlink" href="#methodology" title="Permalink to this headline">¶</a></h2>
+<p>We will use NMF to separate multiple speakers in an audio signal. We believe that by decomposing the magnitude spectrogram of the audio signal using NMF, we can identify and separate different sources based on their unique spectral characteristics.</p>
+<p>While NMF can separate an audio signal into different sources, it does not explicitly provide information about which source corresponds to which speaker [1,2]. Therefore, a clustering algorithm is needed to group the separated sources based on the similarity of their spectral features and assign each group to a different speaker. The clustering algorithm can also help to remove any spurious sources that may have been extracted by NMF but are not related to any speaker.</p>
+<p>Our proposed methodology can be summarized in the following major steps:</p>
+<ol class="simple">
+<li><p>Preprocessing: The audio signal is pre-processed to remove any noise or unwanted sounds using filtering and noise reduction techniques.</p></li>
+<li><p>Short-Time Fourier Transform: Short-Time Fourier Transform (STFT) is applied to the pre-processed audio signal to obtain the spectrogram, which represents the magnitude of the frequencies over time.</p></li>
+<li><p>Non-negative Matrix Factorization: NMF is applied to the magnitude spectrogram to separate the audio signal into different sources. The output of NMF is a basis matrix and an activation matrix.</p></li>
+<li><p>Clustering: The separated sources are clustered using a clustering algorithm to group the sources based on their spectral features. The output of clustering is a set of clusters corresponding to different speakers.</p></li>
+<li><p>Evaluation: We can evaluate our system using measures such as Speaker Error Rate (SER), Diarization Error Rate (DER), etc.</p></li>
+</ol>
+<p>We will consider these steps in our project to accurately separate speakers in audio signals and evaluate the performance of our proposed methodology using appropriate metrics.</p>
+</div>
+<div class="section" id="deliverables">
+<h2>Deliverables<a class="headerlink" href="#deliverables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Abstract of the work</p></li>
+<li><p>Model based on the idea</p>
+<ul>
+<li><p>Trying different NMF strategies</p></li>
+<li><p>Trying out some clustering algorithms</p></li>
+</ul>
+</li>
+<li><p>GitHub repository with code</p></li>
+<li><p>Presentation showing the work done</p></li>
+</ul>
+</div>
+<div class="section" id="dataset-to-be-used">
+<h2>Dataset to be used<a class="headerlink" href="#dataset-to-be-used" title="Permalink to this headline">¶</a></h2>
+<p>The potential datasets for our project include:</p>
+<ul class="simple">
+<li><p>ICSI Meeting Corpus: This corpus contains recordings of meetings conducted in English and includes transcriptions, speaker labels, and annotations for various acoustic and linguistic events.</p></li>
+<li><p>VoxConverse Speaker Diarisation Dataset: VoxConverse is an audio-visual diarisation dataset that consists of multispeaker clips of human speech extracted from YouTube videos. The dataset provides speaker labelling in .rttm format.</p></li>
+</ul>
+<p>However, it’s worth noting that the audio clips in these datasets can be quite lengthy. Therefore, we may need to crop them into shorter segments containing multiple speakers for our analysis.</p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Y. Chen, “Single channel blind source separation based on NMF and its application to speech enhancement,” 2017 IEEE 9th International Conference on Communication Software and Networks (ICCSN), Guangzhou, China, 2017, pp. 1066-1069, doi: 10.1109/ICCSN.2017.8230274.</p></li>
+<li><p>Rohlfing, Christian, Julian M. Becker, and Mathias Wien. “NMF-based informed source separation.” 2016 IEEE international conference on acoustics, speech and signal processing (ICASSP). IEEE, 2016.</p></li>
+<li><p>Patki, Kedar. “Review of single channel source separation techniques.” Proceedings of the 14th International Society for Music Information Retrieval Conference (ISMIR 2013).</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="team_duality_project_init.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">COPD Detection</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="team_gamma_project_init.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Piano Music</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Neeraj Sharma<br/>
+        
+            &copy; Copyright 2023.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

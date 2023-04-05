@@ -6,4 +6,19 @@ root: intro
 chapters:
 - file: ideating
 - file: project_plan_ppt
+- file: team_bandwidth_project_init
+- file: team_bug_smashers_project_init
+- file: team_chiSquared_project_init
+- file: team_duality_project_init
+- file: team_error_404_project_init
+- file: team_gamma_project_init
+- file: team_hidden_layers_project_init
+- file: team_ica_project_init
+- file: team_pulse_project_init
+- file: team_python_project_init
+- file: team_rad_project_init
+- file: team_signalMinded_project_init
+- file: team_symbiotes_project_init
+- file: team_symphony_project_init
+- file: team_waveleds_project_init
 # - file: notebooks
